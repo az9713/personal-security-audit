@@ -110,6 +110,10 @@ Explain: "These pages re-check your password. Signing in now avoids stops later.
 - Header: date, scope, coverage % per dimension (checked / sampled / not checked).
 - Scorecard: one tile per dimension, key number, status (Done / Still open / Not checked).
 - "Do in 15 minutes" quick wins, then top 5 fixes by risk = likelihood × impact × exposure; show effort and reversibility.
+  - Likelihood 1 = needs a targeted, skilled attacker; 2 = common attack that needs a user action; 3 = seen in your evidence or done by automated attacks today.
+  - Impact 1 = nuisance or one low-value account; 2 = one important account, private data, or capped money; 3 = main email, money without a cap, or identity takeover.
+  - Exposure 1 = needs physical or local access; 2 = needs a click, install, or reused password; 3 = reachable from the internet or public now.
+  - Rank by the product (1–27). Ties: lower effort first. Effort in minutes; reversible = yes / no / partly.
 - Per dimension: 2–3 headline numbers; findings with Affected · Evidence + date · Why · Fix (exact steps/commands) · What could break · Label; Confirmed vs Suspicion separated; "Your check" tip.
 - "Checks that stopped me": reason + numbered user steps + official link.
 - Approval table with F-numbers, who does it (agent/user), status; later "Changed" with verification evidence.

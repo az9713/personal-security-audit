@@ -4,9 +4,15 @@ A read-only security review of one person's accounts, devices, API keys, and AI 
 
 It covers 14 areas: inventory, sign-in, recovery chain, delegated access (OAuth apps, AI agents, browser and IDE extensions, MCP servers), attacker leftovers, secrets, sharing, software, network, device, money, AI-agent risk, messages and phone scams, and detection and recovery.
 
+## Inspiration
+
+This project started from Peter Yang's video [*The Internet Is Being Hacked. 6 Things You Need To Do Now*](https://www.youtube.com/watch?v=nXMlSq4aFBg) (22 October 2026). In it, he walks through 6 steps to secure your accounts and shares a "Be my security reviewer" prompt that audits all 6 with an AI agent. We ran that prompt as a full audit on a real machine, recorded every place it stopped or went wrong, and built this version from those notes.
+
+**What we added beyond the original prompt** is in the [enhancement report](https://az9713.github.io/personal-security-audit/enhancement-report.html): 8 more areas (14 in total), 22 commonly missed risks, 12 fixes to existing checks, 10 user-experience changes, the rubrics the report uses, a helper script with 11 commands, and a with-skill versus without-skill test.
+
 ## Two ways to use it
 
-**1. Paste the prompt.** Copy `prompt.txt` into any AI assistant that can use your email, browser, or terminal. Fill in or delete the optional profile block at the end.
+**1. Paste the prompt.** Copy [`prompt.md`](prompt.md) into any AI assistant that can use your email, browser, or terminal. Fill in or delete the optional profile block at the end.
 
 **2. Install the Claude Code skill.**
 
@@ -38,10 +44,6 @@ python -I local_audit.py selftest
 - The audit reads what the agent can reach. It reports each area as checked, sampled, or not checked. It never says you are "secure".
 - `scrub` finds key shapes, full emails, and full phone numbers. It does not find names, domains, or folder paths. Read a report yourself before you share it.
 - Pages that ask for your password are your step. The agent never types a password.
-
-## Credit
-
-The starting point was the six-area "Be my security reviewer" prompt from the video at youtube.com/watch?v=nXMlSq4aFBg. This version adds 8 areas, 22 commonly missed risks, and fixes from a real run.
 
 ## Licence
 
