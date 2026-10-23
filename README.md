@@ -42,3 +42,7 @@ python -I local_audit.py selftest
 ## Credit
 
 The starting point was the six-area "Be my security reviewer" prompt from the video at youtube.com/watch?v=nXMlSq4aFBg. This version adds 8 areas, 22 commonly missed risks, and fixes from a real run.
+
+## Licence
+
+MIT. See `LICENSE`.
